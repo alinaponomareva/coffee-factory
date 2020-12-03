@@ -1,0 +1,163 @@
+@mixin sf-semibold {
+  font-family: "SFPro-Semibold", "Arial", sans-serif;
+  font-weight: 600;
+}
+
+.header {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+
+  &.active {
+    @media (max-width: 767px) {
+      transform: translateY(-100%);
+    }
+  }
+
+  @media (max-width: 1100px) {
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: #fff;
+  }
+
+  @media (min-width: 768px) and (max-width: 1100px) {
+    padding-bottom: 10px;
+  }
+
+  & .container {
+    padding-bottom: 0;
+  }
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 30px;
+  
+  @media (min-width: 1190px) {
+    flex-wrap: nowrap;
+  }
+
+  @media (min-width: 768px) and (max-width: 1189px) {
+    flex-wrap: wrap;
+  }
+}
+
+.header__logo-wrapper {
+  flex-grow: 1;
+    
+  @media (min-width: 768px) and (max-width: 771px) {
+    margin: 0 auto;
+  }
+}
+
+.header__logo {
+  margin-right: 15px;
+  margin: 0 auto;
+  
+  @media (min-width: 1152px) {
+    margin-right: 10px;
+  }
+
+  @media (min-width: 768px) and (max-width: 771px) {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+.header__order {
+  @media (max-width: 1186px) {
+    margin-left: auto;
+  }
+
+  @media (max-width: 746px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 370px) {
+    font-size: 14px;
+  }
+}
+
+.header__order-btn {
+  @include sf-semibold;
+  background-color: transparent;
+  border: 1px solid #1c1c1c;
+  color: #000;
+  padding: 6px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all .3s;
+  font-size: 13px;
+  
+  &:hover {
+    background-color: #1c1c1c;
+    color: #fff;
+    border-color: #1c1c1c;
+
+    @media (max-width: 1100px) {
+      color: #fff;
+      border-color: #fff;
+      
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+  
+  &--inner {
+    color: #fff;
+    border-color: #fff;
+    
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      border-color: #fff;
+    }
+  }
+  
+  @media (min-width: 671px) {
+    margin-right: 8px;
+  }
+  
+  @media (min-width: 455px) {
+    font-size: 16px;
+    padding: 6px 20px;
+  }
+
+  @media (max-width: 1100px) {
+    color: #fff;
+    border-color: #fff;
+  }
+}
+
+.header__order-tel {
+  @include sf-semibold;
+  font-size: 13px;
+  line-height: 33px;
+
+  &--inner {
+    color: #fff;
+
+    @media (max-width: 771px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 670px) {
+    display: block;
+    text-align: center;
+  }
+
+  @media (min-width: 455px) {
+    font-size: 16px;
+  }
+}

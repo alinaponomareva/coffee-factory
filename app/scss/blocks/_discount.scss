@@ -1,0 +1,235 @@
+@mixin sf-medium {
+  font-family: "SFPro-Medium", "Arial", sans-serif;
+  font-weight: 500;
+}
+
+@mixin sf-semibold {
+  font-family: "SFPro-SemiBold", "Arial", sans-serif;
+  font-weight: 500;
+}
+
+.discount {
+  padding-bottom: 15px;
+}
+
+.discount__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 30px;
+  
+  @media (min-width: 780px) {
+    max-width: 1000px;
+    justify-content: center;
+    margin: 90px auto 0;
+  }
+
+  @media (min-width: 1155px) {
+    flex-wrap: nowrap;
+    max-width: 100%;
+  }
+}
+
+.discount__item {
+  min-height: 190px;
+  background-repeat: no-repeat;
+  background-size: 80px 150px;
+  margin-bottom: 0px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: 768px) {
+    visibility: hidden;
+  }
+
+  &.wow {
+    @media (min-width: 768px) {
+      visibility: visible;
+    }
+  }
+
+  @media (min-width: 440px) {
+    margin: 0;
+  }
+
+  @media (min-width: 450px) {
+    margin-right: 100px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (max-width: 735px) {
+      display: none;
+    }
+  }
+
+  & + .discount__item {
+    margin-top: -30px;
+
+    @media (min-width: 780px) {
+      margin-top: 0;
+    }
+
+    @media (max-width: 439px) {
+      margin-top: 0;
+    }
+  }
+
+  &:nth-child(even) {
+    margin-right: 0;
+
+    @media (min-width: 440px) and (max-width: 779px) {
+      margin-left: auto;
+    }
+
+    @media (min-width: 1155px) {
+      margin-top: 100px;
+      margin-right: 0;
+    }
+  }
+
+  &:first-child {
+    background-image: url("../images/discount-1.png");
+    background-position: 126px 0;
+    background-size: 50px 150px;
+
+    &::before {
+      background-image: url(../images/line-1.svg);
+      top: 40px;
+      left: 313px;
+      height: 132px;
+      width: 194px;
+      
+      @media (min-width: 780px) {
+        top: -3px;
+        left: 266px;      
+      }
+
+      @media (min-width: 1155px) {
+        top: 4px;
+        left: 234px;
+        height: 140px;
+        width: 177px;
+      }
+
+      @media (max-width: 735px) {
+        background-image: none;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    background-image: url("../images/discount-2.png");
+    background-position: 122px 0;
+
+    &::before {
+      background-image: url(../images/line-3.svg);
+      top: 154px;
+      left: -77px;
+      height: 150px;
+      width: 298px;
+      transform: rotate(-19deg);
+
+      @media (min-width: 780px) {
+        top: 168px;
+        left: -153px;    
+    }
+
+      @media (min-width: 1155px) {
+        top: 85px;
+        left: 207px;
+        height: 45px;
+        width: 190px;
+        transform: rotate(148deg);        
+      }
+
+      @media (max-width: 735px) {
+        background-image: none;
+      }
+    }
+
+    @media (min-width: 780px) {
+      margin-top: 90px;
+    }
+
+    @media (max-width: 439px) {
+      margin: auto;
+    }
+  }
+
+  &:nth-child(3) {
+    background-image: url("../images/discount-3.png");
+    background-position: 124px 0;
+
+    @media (min-width: 780px) {
+      margin-top: 50px;
+    }
+
+    @media (min-width: 1155px) {
+      margin-top: 0;
+    }
+
+    &::before {
+      background-image: url(../images/line-2.svg);
+      bottom: -110px;
+      left: 186px;
+      height: 91px;
+      width: 314px;
+      transform: rotate(208deg);
+      
+      @media (min-width: 780px) {
+        bottom: 18px;
+        left: 218px;
+      }  
+      
+      @media (min-width: 1155px) {
+        bottom: 232px;
+        left: 213px;
+        height: 91px;
+        width: 290px;
+        transform: rotate(376deg);      
+      }
+
+      @media (max-width: 735px) {
+        background-image: none;
+      }
+    }
+  }
+
+  &:last-child {
+    background-image: url("../images/discount-4.png");
+    background-position: 124px 0;
+    
+    &::before {
+      @media (max-width: 735px) {
+        background-image: none;
+      }
+    }
+    
+    @media (min-width: 780px) {
+      margin-top: 125px;
+    }
+
+    @media (max-width: 439px) {
+      margin: auto;
+    }
+  }
+}
+
+.discount__info-text {
+  @include sf-semibold;
+  max-width: 320px;
+  font-size: 18px;
+  padding-top: 23px;
+  color: #fff;
+  text-align: center;
+
+  @media (min-width: 1155px) {
+    text-align: left;
+  }
+}

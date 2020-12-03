@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <title>Coffee Factory - сеть кофеен в Москве</title>
+  <link type="text/css" rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="sprite" style="display: none;">
+    <include src="build/images/sprite.svg"></include>
+  </div>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner" id="header-navigation">
+        <div class="header__logo-wrapper" data-menuanchor="top">
+          <a class="header__logo logo" href="#top">
+            <picture>
+              <source srcset="images/logo-desktop.webp" type="image/webp">
+              <img class="logo__image" src="images/logo-desktop.png" width="80" height="80" alt="Логотип Coffee Factory">
+            </picture>
+          </a>
+        </div>
+        <nav class="header__menu main-menu">
+          <button class="main-menu__btn">
+            <span class="main-menu__btn-line"></span>
+          </button>
+          <ul class="main-menu__list" id="main-menu">
+            <li class="main-menu__item" data-menuanchor="about-us">
+              <a class="main-menu__item-link" href="#about-us">Коротко о нас</a>
+            </li>
+            <li class="main-menu__item" data-menuanchor="menu">
+              <a class="main-menu__item-link" href="#menu">Меню</a>
+            </li>
+            <li class="main-menu__item" data-menuanchor="discount">
+              <a class="main-menu__item-link" href="#discount">Скидки</a>
+            </li>
+            <li class="main-menu__item" data-menuanchor="address">
+              <a class="main-menu__item-link" href="#address">Адреса</a>
+            </li>
+            <li class="main-menu__item" data-menuanchor="connection">
+              <a class="main-menu__item-link" href="#connection">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__order">
+          <a class="header__order-btn" href="#order-popup">Заказать торт</a>
+          <a class="header__order-tel" href="tel:88888888888">8 (888) 888 88 88</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main" id="fullpage">
+    <section class="page-section top" data-anchor="top">
+      <div class="container">
+        <div class="top__inner">
+          <h1 class="top__title">Coffee Factory</h1>
+          <p class="top__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugit voluptatum alias. Rerum aliquid quibusdam rem quasi quaerat ab reprehenderit laudantium illum eos modi, pariatur nesciunt a voluptatum doloribus temporibus obcaecati in, nisi fuga enim ipsam!</p>
+          <ul class="top__social-list">
+            <li class="top__social-item">
+              <a class="top__social-link top__social-link--ig" href="#">
+                <svg class="top__social-image" width="40" height="40" focusable="false" role="img" aria-label="Ссылка на Instagram">
+                  <use xlink:href="#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="top__social-item">
+              <a class="top__social-link top__social-link--yt" href="#">
+                <svg class="top__social-image" width="40" height="40" focusable="false" role="img" aria-label="Ссылка на Youtube">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="top__social-item">
+              <a class="top__social-link top__social-link--fb" href="#">
+                <svg class="top__social-image" width="40" height="40" focusable="false" role="img" aria-label="Ссылка на Facebook">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="scroll__btn">
+        <a class="scroll__link" href="#about-us">
+          <img class="scroll__link-img" src="images/arrow-downblack.svg" alt="Стрелка вниз">
+        </a>
+      </div>
+    </section>
+    <div class="fixed-crossbrowser-background"></div>
+    <section class="page-section page-section--inner about-us" data-anchor="about-us">
+      <div class="container">
+        <div class="about-us__inner">
+          <div class="about-us__text-inner">
+            <h2 class="about-us__title title">Коротко о нас</h2>
+            <p class="about-us__text">Над развитием «Coffee Factory» работает сплоченная команда профессионалов, которая с 2010 года успешно занимается отбором, закупкой и обжаркой лучших кофейных зерен в сегменте Speciality. Поэтому мы можем гарантировать качество на всех этапах приготовления напитков и предлагаем лучший продукт своим покупателям.«Coffee Factory» — это уникальная сеть кофеен, которая сочетает в себе отличное качество напитков, уютную  атмосферу и разумные цены. Мы — одна из самых динамично развивающихся компаний в сфере кофейного бизнеса в Москве.</p>
+            <p class="about-us__text">Над развитием «Coffee Factory» работает сплоченная команда профессионалов, которая с 2010 года успешно занимается отбором, закупкой и обжаркой лучших кофейных зерен в сегменте Speciality. Поэтому мы можем гарантировать качество на всех этапах приготовления напитков и предлагаем лучший продукт своим покупателям.</p>
+          </div>
+          <div class="about-us__slider-inner">
+            <div class="about-us__slider-list">
+              <div class="about-us__slider-item about-us__slider-item--1 about-us__slider-item--active" id="slide-1">
+                <picture>
+                  <source class="about-us__slide-image" srcset="images/slide-1.webp" type="image/webp"> 
+                  <img class="about-us__slide-image" src="images/slide-1.jpg" width="300" height="460" alt="">
+                </picture>
+              </div>
+              <div class="about-us__slider-item about-us__slider-item--2" id="slide-2">
+                <picture>
+                  <source class="about-us__slide-image" srcset="images/slide-2.webp" type="image/webp"> 
+                  <img class="about-us__slide-image" src="images/slide-2.jpg" width="300" height="460" alt="">
+                </picture>
+              </div>
+              <div class="about-us__slider-item about-us__slider-item--3" id="slide-3">
+                <picture>
+                  <source class="about-us__slide-image" srcset="images/slide-3.webp" type="image/webp"> 
+                  <img class="about-us__slide-image" src="images/slide-3.jpg" width="300" height="460" alt="">
+                </picture>
+              </div>
+              <div class="about-us__slider-item about-us__slider-item--4" id="slide-4">
+                <picture>
+                  <source class="about-us__slide-image" srcset="images/slide-4.webp" type="image/webp"> 
+                  <img class="about-us__slide-image" src="images/slide-4.jpg" width="300" height="460" alt="">
+                </picture>
+              </div>
+              <div class="about-us__slider-item about-us__slider-item--5" id="slide-5">
+                <picture>
+                  <source class="about-us__slide-image" srcset="images/slide-5.webp" type="image/webp"> 
+                  <img class="about-us__slide-image" src="images/slide-5.jpg" width="300" height="460" alt="">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll__btn">
+        <a class="scroll__link" href="#menu">
+          <img class="scroll__link-img" src="images/arrow-down.svg" alt="Стрелка вниз">
+        </a>
+      </div>
+    </section>
+    <section class="page-section page-section--inner menu" data-anchor="menu">
+      <div class="container">
+        <h2 class="menu__title title">Меню</h2>
+        <div class="menu__wrapper">
+          <div class="menu__all">
+            <div class="menu__tabs-wrapper">
+              <div class="menu__tabs">
+                <a class="menu__tab menu__tab--active" href="#menu-tab1">
+                  <span class="menu__tab-title">Кофе и чай</span>
+                </a>
+                <a class="menu__tab" href="#menu-tab2">
+                  <span class="menu__tab-title">Топпинги и сиропы</span>
+                </a>
+                <a class="menu__tab" href="#menu-tab3">
+                  <span class="menu__tab-title">Сэндвичи и десерты</span>
+                </a>
+                <a class="menu__tab" href="#menu-tab4">
+                  <span class="menu__tab-title">Выпечка на заказ</span>
+                </a>
+              </div>
+            </div>
+            <div class="menu__inner">
+              <div class="menu__box menu__box--coffee menu__box--active" id="menu-tab1">
+                <table class="menu__box-coffee">
+                  <tbody>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--hidden">Наименование</td>
+                      <td class="menu__item-cell">250 мл</td>
+                      <td class="menu__item-cell">350 мл</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Американо</td>
+                      <td class="menu__item-cell menu__item-cell--second">80 р.</td>
+                      <td class="menu__item-cell menu__item-cell--third">120 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Капучино</td>
+                      <td class="menu__item-cell menu__item-cell--second">140 р.</td>
+                      <td class="menu__item-cell menu__item-cell--third">180 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Латте</td>
+                      <td class="menu__item-cell menu__item-cell--second">140 р.</td>
+                      <td class="menu__item-cell menu__item-cell--third">180 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Эспрессо</td>
+                      <td class="menu__item-cell menu__item-cell--second">90 р.</td>
+                      <td class="menu__item-cell menu__item-cell--third">130 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Флэт Уайт</td>
+                      <td class="menu__item-cell menu__item-cell--second">130 р.</td>
+                      <td class="menu__item-cell menu__item-cell--third">170 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Раф классический</td>
+                      <td class="menu__item-cell menu__item-cell--second">140 р.</td>
+                      <td class="menu__item-cell menu__item-cell--third">180 р.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="menu__box-coffee">
+                  <tbody>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--hidden">Наименование</td>
+                      <td class="menu__item-cell">250 мл</td>
+                      <td class="menu__item-cell">350 мл</td>
+                    </tr> 
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Раф лавандовый</td>
+                      <td class="menu__item-cell menu__item-cell--second">160 р.</td>
+                      <td class="menu__item-cell menu__item-cell--third">200 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Матча кокос</td>
+                      <td class="menu__item-cell menu__item-cell--second">150 р.</td>
+                      <td class="menu__item-cell menu__item-cell--third">190 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Латте солёная карамель</td>
+                      <td class="menu__item-cell menu__item-cell--second">150 р.</td>
+                      <td class="menu__item-cell menu__item-cell--third">190 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Какао домашнее</td>
+                      <td class="menu__item-cell menu__item-cell--second">140 р.</td>
+                      <td class="menu__item-cell menu__item-cell--third">180 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Апельсиновый фрэш</td>
+                      <td class="menu__item-cell menu__item-cell--second">190 р.</td>
+                      <td class="menu__item-cell menu__item-cell--third">240 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Чай в ассортименте</td>
+                      <td class="menu__item-cell menu__item-cell--second">130 р.</td>
+                      <td class="menu__item-cell menu__item-cell--third">160 р.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="menu__box menu__box--toppings" id="menu-tab2">
+                <table class="menu__box-topping">
+                  <tbody>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Маршмеллоу</td>
+                      <td class="menu__item-cell menu__item-cell--second">40 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Сироп в ассортименте</td>
+                      <td class="menu__item-cell menu__item-cell--second">30 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Топпинг в ассортименте</td>
+                      <td class="menu__item-cell menu__item-cell--second">30 р.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="menu__box-topping">
+                  <tbody>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Мороженое</td>
+                      <td class="menu__item-cell menu__item-cell--second">60 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Взбитые сливки</td>
+                      <td class="menu__item-cell menu__item-cell--second">40 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title"> Альтернативное молоко</td>
+                      <td class="menu__item-cell menu__item-cell--second">70 р.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="menu__box menu__box--desserts" id="menu-tab3">
+                <table class="menu__box-desserts">
+                  <tbody>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Сэндвич с беконом и голландским соусом</td>
+                      <td class="menu__item-cell menu__item-cell--second">250 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Сэндвич с лососем и голландским соусом</td>
+                      <td class="menu__item-cell menu__item-cell--second">260 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Цезарь ролл</td>
+                      <td class="menu__item-cell menu__item-cell--second">230 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Торт в ассортименте</td>
+                      <td class="menu__item-cell menu__item-cell--second">260 р.</td>
+                    </tr>
+                    <tr class="menu__item">
+                      <td class="menu__item-cell menu__item-cell--title">Блинчики в ассортименте</td>
+                      <td class="menu__item-cell menu__item-cell--second">180 р.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="menu__box" id="menu-tab4">
+                <p class="menu__order-text">В нашей кофейне вы можете заказать торты и другие десерты по вашему вкусу. Заявку на оформление заказа вы можете заполнить прямо здесь, либо позвонив нам по телефону 
+                  <a class="menu__order-phone" href="tel:88888888888">8 (888) 888-88-88</a>
+                </p>
+                <a class="menu__order-btn" href="#order-popup">Сделать заказ</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu__popup popup" id="order-popup">
+            <a class="popup__area" href="#header"></a>
+            <div class="popup__body">
+              <div class="popup__content">
+                <a class="popup__close" href="#header"></a>
+                <h4 class="popup__title">Закажите выпечку и десерты</h4>
+                <p class="popup__text">Coffee Factory  создает торты на заказ, а также другие десерты по вашему вкусу. Заполните форму ниже, и наш оператор перезвонит вам в течение 1 рабочего дня, чтобы уточнить детали заказа, стоимость и время изготовления десерта.</p>
+                <form class="popup__order-form" action="POST">
+                  <div class="popup__order-block">
+                    <label class="popup__order-label popup__order-label--firstcolumn" for="your-name">
+                      <span class="popup__label-text">Ваше имя:
+                      <span class="required">*</span></span>
+                      <input class="popup__order-input" type="text" id="your-name" name="order-name" placeholder="Введите имя" required="">
+                    </label>
+                    <label class="popup__order-label popup__order-label--firstcolumn" for="your-email">
+                      <span class="popup__label-text">Ваш e-mail:</span>
+                      <input class="popup__order-input" type="email" id="your-email" name="order-email" placeholder="Введите e-mail">
+                    </label>
+                  </div>
+                  <div class="popup__order-block">
+                    <label class="popup__order-label popup__order-label--secondcolumn" for="your-tel">
+                      <span class="popup__label-text">Номер телефона: <span class="required">*</span></span>
+                      <input class="popup__order-input" type="number" id="your-tel" name="order-tel" placeholder="Введите номер телефона" required="">
+                    </label>
+                    <label class="popup__order-label popup__order-label--secondcolumn" for="your-cake">
+                      <span class="popup__label-text">Выберите торт:</span>
+                      <select name="cake-list" class="popup__order-cakelist" id="your-cake">
+                        <option value="tiramisu">Тирамису</option>
+                        <option value="cheesecake">Чизкейк</option>
+                        <option value="honey-cake">Медовик</option>
+                        <option value="banana-brownie">Брауни банановый</option>
+                        <option value="carrot-cake">Морковный</option>
+                        <option value="chocolate">Шоколадный</option>
+                        <option value="fruit">Фруктовый</option>
+                        <option value="caramel">Карамельный</option>
+                        <option value="other">Другое</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="popup__order-block popup__order-block--other">
+                    <label class="popup__order-label popup__order-label--block" for="your-wishes">Ваши пожелания к заказу:</label>
+                    <textarea class="popup__order-textarea" name="wishes" id="your-wishes" cols="68" rows="7" placeholder="Сообщите нам о ваших пожеланиях к составу и украшению десерта, сроках доставки и др."></textarea>
+                  </div>
+                  <button class="popup__order-btn" type="submit">Отправить</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="menu__aside" data-wow-delay=".5s" data-wow-duration="1s">
+              <p class="menu__aside-text">С 20:00 до 21:00 действует скидка 20% на все наши сэндвичи и десерты</p>
+          </div>
+        </div>
+      </div>
+      <div class="scroll__btn">
+        <a class="scroll__link" href="#discount">
+          <img class="scroll__link-img" src="images/arrow-down.svg" alt="Стрелка вниз">
+        </a>
+      </div>
+    </section>
+    <section class="page-section page-section--inner discount" data-anchor="discount">
+      <div class="container">
+        <h2 class="discount__title title">Как получить скидку</h2>
+        <div class="discount__list">
+          <div class="discount__item discount__item--1">
+            <div class="discount__number visually-hidden">1</div>
+            <div class="discount__info">
+              <p class="discount__info-text">Приобретите бесплатную карту постоянного покупателя «Coffee Factory» в одной из наших кофеен</p>
+            </div>
+          </div>
+          <div class="discount__item discount__item--2">
+            <div class="discount__number visually-hidden">2</div>
+            <div class="discount__info">
+              <p class="discount__info-text">Пользуйтесь ею каждый раз при оплате покупок в наших кофейнях, чтобы накопить бонусы</p>
+            </div>
+          </div>
+          <div class="discount__item discount__item--3">
+            <div class="discount__number visually-hidden">3</div>
+            <div class="discount__info">
+              <p class="discount__info-text">Обменивайте бонусы на скидки к любой позиции в меню</p>
+            </div>
+          </div>
+          <div class="discount__item discount__item--4">
+            <div class="discount__number visually-hidden">4</div>
+            <div class="discount__info">
+              <p class="discount__info-text">Также всем постоянным клиентам - каждый 7-й кофе в подарок!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll__btn">
+        <a class="scroll__link" href="#address">
+          <img class="scroll__link-img" src="images/arrow-down.svg" alt="Стрелка вниз">
+        </a>
+      </div>
+    </section>
+    <section class="page-section page-section--inner address" data-anchor="address">
+      <div class="container">
+        <h2 class="address__title title">Адреса</h2>
+        <div class="address__tabs-wrapper">
+          <div class="address__tabs">
+            <a class="address__tab address__tab--active" href="#address-tab1">
+              <span class="address__tab-title">Кофейни в Москве</span>
+            </a>
+            <a class="address__tab" href="#address-tab2">
+              <span class="address__tab-title">Показать на карте</span>
+            </a>
+          </div>
+        </div>
+        <div class="address__item-wrapper address__item-wrapper--active" id="address-tab1">
+          <div class="address__item-inner">
+            <ul class="address__list">
+              <li class="address__item">
+                <p class="address__item-text">м. Смоленская, ул. Первая, д. 2</p>
+              </li>
+              <li class="address__item">
+                <p class="address__item-text">м. Смоленская, ул. Первая, д. 2</p>
+              </li>
+              <li class="address__item">
+                <p class="address__item-text">м. Смоленская, ул. Первая, д. 2</p>
+              </li>
+              <li class="address__item">
+                <p class="address__item-text">м. Смоленская, ул. Первая, д. 2</p>
+              </li>
+              <li class="address__item">
+                <p class="address__item-text">м. Смоленская, ул. Первая, д. 2</p>
+              </li>
+              <li class="address__item">
+                <p class="address__item-text">м. Смоленская, ул. Первая, д. 2</p>
+              </li>
+              <li class="address__item">
+                <p class="address__item-text">м. Смоленская, ул. Первая, д. 2</p>
+              </li>
+              <li class="address__item">
+                <p class="address__item-text">м. Смоленская, ул. Первая, д. 2</p>
+              </li>
+            </ul>
+            <div class="address__mode" data-wow-delay=".5s" data-wow-duration="2s">
+              <p class="address__mode-text">Все наши кофейни работают ежедневно с 08:00 до 21:00</p>
+            </div>
+          </div>
+        </div>
+        <div class="address__item-wrapper address__item-wrapper" id="address-tab2">
+          <div class="address__map">
+            <h2 class="visually-hidden">Как до нас добраться</h2>
+            <div class="map" id="map"></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll__btn">
+        <a class="scroll__link" href="#connection">
+          <img class="scroll__link-img" src="images/arrow-down.svg" alt="Стрелка вниз">
+        </a>
+      </div>
+    </section>
+    <section class="page-section page-section--inner connection" data-anchor="connection">
+      <div class="container">
+        <h2 class="connection__title title">Свяжитесь с нами</h2>
+        <div class="connection__inner">
+          <div class="connection__contacts">
+            <h3 class="connection__contacts-title">Контакты</h3>
+            <a class="connection__contacts-tel" href="tel:88888888888">8 (888) 888-88-88</a>
+            <a href="mailto:contact@gmail.com" target="_blank" class="connection__contacts-email">contact@gmail.com</a>
+            <p class="connection__contacts-office">Главный офис:</p>
+            <div class="connection__contacts-address">Москва, ул. Первая, д. 2</div>
+          </div>
+          <div class="connection__questions">
+            <form class="connection__questions-form" action="POST">
+              <h3 class="connection__question-title">Задайте вопрос</h3>
+              <p class="connection__question-text">Если у вас остались какие-либо вопросы, вы можете задать их здесь, и мы обязательно ответим вам в течение двух рабочих дней.</p>
+              <div class="connection__question-inputs">
+                <input class="connection__question-input" type="text" placeholder="Ваше имя">
+                <input class="connection__question-input" type="email" placeholder="Ваш e-mail">
+              </div>
+              <textarea class="connection__question-textarea" cols="48" rows="10" placeholder="Что вы хотите узнать?"></textarea>
+              <button class="connection__question-btn" type="submit">Отправить</button>
+            </form>
+          </div>
+          <ul class="connection__social-list">
+            <li class="connection__social-item">
+              <a class="connection__social-link connection__social-link--ig" href="#">
+                <svg class="connection__social-image" width="40" height="40" focusable="false" role="img" aria-label="Ссылка на Instagram">
+                  <use xlink:href="#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="connection__social-item">
+              <a class="connection__social-link connection__social-link--yt" href="#">
+                <svg class="connection__social-image" width="40" height="40" focusable="false" role="img" aria-label="Ссылка на Youtube">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="connection__social-item">
+              <a class="connection__social-link connection__social-link--fb" href="#">
+                <svg class="connection__social-image" width="40" height="40" focusable="false" role="img" aria-label="Ссылка на Facebook">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/libs.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script>svg4everybody();</script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=bbeb41af-3b2d-47bd-ba7a-fbfd62b48d47&lang=ru_RU"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
